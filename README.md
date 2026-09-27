@@ -1,7 +1,19 @@
-# Penguins Heroku
+# Penguin Species Classifier
 
-A penguins-themed application repository associated with Heroku.
+A Streamlit app that predicts a penguin species from physical measurements.
 
-## About
+## Features
 
-This repository contains the application source and deployment files for the project. Refer to the code and configuration for the current features and setup.
+- Enter island, sex, bill length, bill depth, flipper length, and body mass in the sidebar.
+- Upload a CSV for batch input.
+- View the predicted species and class probabilities.
+
+The app uses the saved classifier in `penguins_classifier.pkl` and the sample data in `penguins_cleaned.csv`.
+
+## Run locally
+
+Install `requirements.txt`, then run:
+
+```bash
+streamlit run penguins_app.py
+```
